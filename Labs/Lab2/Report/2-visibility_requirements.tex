@@ -1,0 +1,9 @@
+\section{Visibility Requirements}
+\textbf{Raindrop simulation and assumption:}
+To simulate the raindrops on the windshield, we use the actor component of the uniform random number generator. The uniform random number generator outputs a random sequence that follows the uniform distribution. For each iteration, a newly generated number will be used to represent the volume of raindrops at some timestamp. Specifically, we set the uniform distribution range from 1 ml to 8 ml.
+
+\textbf{Maximum remaining water allowed on the surface of the windshield while the wiper is OFF:} We set 10 ml as a threshold, when the volume of remaining water exceeds 10 ml, the wiper works in SLOW mode.
+
+\textbf{Maximum remaining water allowed on the surface of the windshield while the wiper works in SLOW mode:} We set 15 ml as another threshold, when the volume of remaining water exceeds 15 ml, the wiper works in FAST mode.
+
+\textbf{Wiper speed:} The wiper has three states, OFF, SLOW, and FAST. If the status is OFF, the multiplier times the remaining water by 1; if the status is SLOW, the multiplier times the remaining water by 0.5, which means 50\% water is wiped out; if the status is FAST, the multiplier times the remaining water by 0.2, which means 80\% water is wiped out. 

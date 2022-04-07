@@ -1,0 +1,75 @@
+\documentclass{article}
+
+\PassOptionsToPackage{numbers,sort&compress}{natbib}
+\usepackage[preprint]{neurips_2021}
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{hyperref}       % hyperlinks
+\usepackage{url}            % simple URL typesetting
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+\usepackage{xcolor}         % colors
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{subfiles}
+\usepackage{ifthen}
+\usepackage{color}
+\usepackage{wrapfig}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\usepackage{wrapfig}
+\usepackage{subfigure}%
+\usepackage{graphicx}
+
+\title{Embedded System Design \\ Lab 2: Modeling in Ptolemy}
+\author{%
+  Yucheng Jin \\
+  University of California, Berkeley \\
+  \texttt{yuchengjin@berkeley.edu} \\
+  \And
+  Fangjun Yi \\
+  University of California, Berkeley \\
+  \texttt{fangjun\_yi@berkeley.edu} \\
+  \And
+  Zuang Yu\\
+  University of California, Berkeley \\
+  \texttt{zuang99@berkeley.edu} \\
+  \And
+  Tilek Chubakov\\
+  University of California, Berkeley \\
+  \texttt{tchubakov@berkeley.edu} \\
+}
+
+
+
+%% commands
+\newcommand{\xhdr}[1]{\vspace{3mm}\noindent{{\bf #1.}}}
+
+\begin{document}
+
+\newpage
+
+\maketitle
+\subfile{1-introduction}
+\subfile{2-visibility_requirements}
+\subfile{3-weather_model}
+\subfile{4-rain_sensor_model}
+\subfile{5-windshield_wiper_model}
+\subfile{6-models_of_computation}
+\subfile{7-parameters}
+\subfile{8-simulation_results}
+
+
+\clearpage
+\newpage
+\clearpage
+\newpage
+\bibliographystyle{plain}
+\bibliography{99-cites}
+
+\end{document}

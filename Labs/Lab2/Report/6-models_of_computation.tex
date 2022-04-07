@@ -1,0 +1,7 @@
+\section{Models of Computation}
+There are three models of computation used in our design,
+\begin{itemize}
+    \item \textbf{The addition model:} This model is used to compute the water on the surface of the windshield at each timestamp, where the newly generated "raindrop" is added to the volume of remaining water.
+    \item \textbf{The FSM model:} This model is used to compute the wiper control signal. If the volume of remaining water is less than 10 ml, the FSM outputs 0 as OFF signal; if the volume of remaining water is less than 15 ml but exceeds 10 ml, the FSM outputs 1 as SLOW signal; if the volume of remaining water exceeds 15 ml, the FSM outputs 2 as FAST signal.
+    \item \textbf{The multiplication model:} This model is used to compute the volume of remaining water after each wiper action. The volume of remaining water is multiplied by 1 if the wiper is OFF; the volume of remaining water is multiplied by 0.5 if the wiper works in SLOW mode; the volume of remaining water is multiplied by 0.2 if the wiper works in FAST mode.
+\end{itemize}
